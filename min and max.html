@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min and MAx</title>
+</head>
+<body>
+    <script>
+        const arr=[10,2,3,7,5,6,70,40];
+            var min = arr[0];
+            var max=arr[0];
+            for(let i=0;i<arr.length;i++)
+            {
+                    if(arr[i]<min)
+                    {
+                        min = arr[i];
+                    }
+                    if(arr[i]>max)
+                    {
+                        max=arr[i];
+                    }
+            }
+            console.log("min element is ",min);
+            console.log("max element is ",max);
+    </script>
+</body>
+</html>

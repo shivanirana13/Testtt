@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   function selectionSort(arr) {
+    const len = arr.length;
+    for (let i = 0; i < len - 1; i++) {
+        let minIndex = i;
+        for (let j = i + 1; j < len; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        if (minIndex !== i) {
+          
+            [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+        }
+    }
+    return arr;
+}
+
+let arrayToSort = ['J','Z','D','Q','L','W','A','H','Y','K','G','N','V','R','P','X','C','M','F','O','U','S','I','E','T','B'];
+console.log("Original Array:", arrayToSort);
+console.log("Sorted Array:", selectionSort(arrayToSort));
+
+
+   </script>
+</body>
+</html>
